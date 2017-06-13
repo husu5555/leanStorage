@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.title {
+    font-weight: 700;
+    color: #7da755;
+    line-height: 150px;
+    font-size: 85px;
+    letter-spacing: .05px;
+    margin-bottom: 4px;
+}
+
+.f-as {
+    font-family: Amatic SC, cursive;
+}
+
+.sub-title {
+    font-weight: 100;
+    color: #5f6060;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+.content__introduction {
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.content__hobbies--change {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10px;
+    color: #cf4a5c;
+}
+
+.content__hobbies--change:hover {
+    color: #69606b;
+}
+
+.content__hobbies--title {
+    line-height: 40px;
+}
+
+.content__blogs--article {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.article-box {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.article-box a {
+    text-decoration: none;
+    color: black;
+}
+
+.content__blogs--title {
+    line-height: 40px;
+}
+
+.article-box__title {
+    font-weight: 700;
+    color: #333;
+}
+
+.content__contact--title {
+    line-height: 40px;
+}
+
+.content__contact--form {}
+
+.content__contact--form {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.name {
+    height: 35px;
+    width: 50%;
+    border-radius: 3px;
+}
+
+.message {
+    height: 150px;
+    width: 100%;
+    border-radius: 3px;
+    margin: 15px 0;
+}
+
+.submit-button {
+    text-align: center;
+}
+
+.form-button {
+    width: 80px;
+    height: 30px;
+    margin: 0 auto;
+    line-height: 30px;
+    color: #7da755;
+    border: 1px solid #7da755;
+    border-radius: 3px;
+    cursor: pointer;
+}
