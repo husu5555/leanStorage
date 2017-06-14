@@ -29,7 +29,7 @@ var queryImg = new AV.Query('ImgObject');
 queryImg.exists('url');
 queryImg.find().then(function(results) {
     $.each(results, function(index, domEle) {
-        if (index < 3) {
+        if (index < 6) {
             $("<img src=''/>").attr("src", domEle.get("url")).appendTo("#hobbiesImgs");
         } else {
             return;
@@ -38,7 +38,7 @@ queryImg.find().then(function(results) {
     // 换一批图片
     $(".content__hobbies--change").on("click", function() {
         var str;
-        for (var i = 0; i < 3; i++) {
+        for (var i = 0; i < 6; i++) {
             var resultIndex = parseInt(Math.random() * (results.length));
             var src = results[resultIndex].get("url");
             $("img").eq(i).attr("src", src);
@@ -51,7 +51,7 @@ var queryArticle = new AV.Query('ArticleObject');
 queryArticle.exists('title');
 queryArticle.find().then(function(results) {
     $.each(results, function(index, domEle) {
-        if (index < 3) {
+        if (index < 10) {
             var title = domEle.get("title");
             var author = domEle.get("author");
             var introduce = domEle.get("introduce");
@@ -64,3 +64,20 @@ queryArticle.find().then(function(results) {
         }
     });
 }, function(error) {});
+/*点击导航*/
+$(".header__ul").on("click", function(ev) {　
+    var ev = ev || window.event;　　　　
+    var target = ev.target || ev.srcElement;　　　　
+    if (target.nodeName.toLowerCase() == 'li') {　
+        $(".header__li").removeClass("active");　　
+        $("#" + target.id).addClass("active");　　
+        var id = "#" + target.innerHTML.toLowerCase();
+        $(id).removeClass("hide").addClass("show");　
+        var contentBox = $(".content__box");
+        for (var i = 0; i < contentBox.length; i++) {
+            if (contentBox[i].id !== target.innerHTML.toLowerCase()) {
+                contentBox.eq(i).removeClass("show").addClass("hide");
+            }
+        }
+    }
+});
