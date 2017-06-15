@@ -81,3 +81,19 @@ $(".header__ul").on("click", function(ev) {　
         }
     }
 });
+var EmailObject = AV.Object.extend('EmailObject');
+var emailObject = new EmailObject();
+/*存储email信息*/
+$(".submit-button").on("click", function() {
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var subject = $("#subject").val();
+    var message = $("#message").val();
+    emailObject.set("name", name);
+    emailObject.set("email", email);
+    emailObject.set("subject", subject);
+    emailObject.set("message", message);
+    emailObject.save().then(function(object) {
+        alert("发送成功");
+    });
+});
