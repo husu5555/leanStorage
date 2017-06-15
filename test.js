@@ -51,14 +51,14 @@ var queryArticle = new AV.Query('ArticleObject');
 queryArticle.exists('title');
 queryArticle.find().then(function(results) {
     $.each(results, function(index, domEle) {
-        if (index < 10) {
+        if (index < 10 && index > 0) {
             var title = domEle.get("title");
             var author = domEle.get("author");
             var introduce = domEle.get("introduce");
             var url = domEle.get("url");
             var str = '<div class="article-box"><div class="text-left article-box__title"><a href=' + url + '>' + title + '</a></div>';
             str += '<div class="text-left">' + introduce + '</div></div>';
-            $(str).appendTo("#blogsArticle");
+            $("#blogsArticle").append(str);
         } else {
             return;
         }
