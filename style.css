@@ -3,6 +3,18 @@
     padding: 0;
 }
 
+@media only screen and (max-width: 414px) {
+    html {
+        font-size: 20px !important;
+    }
+}
+
+@media only screen and (min-width: 428px) {
+    html {
+        font-size: 25px !important;
+    }
+}
+
 body {
     background: #fff;
     text-align: center;
@@ -10,8 +22,8 @@ body {
 }
 
 .header {
-    height: 40px;
-    line-height: 40px;
+    height: 2rem;
+    line-height: 2rem;
     padding-left: 10%;
     border-bottom: 1px solid #f1f1f1;
 }
@@ -21,7 +33,7 @@ body {
 }
 
 .header__li {
-    margin-right: 20px;
+    margin-right: 1rem;
     display: inline-block;
 }
 
@@ -49,8 +61,8 @@ body {
 .title {
     font-weight: 700;
     color: #7da755;
-    line-height: 150px;
-    font-size: 85px;
+    line-height: 7.5rem;
+    font-size: 4.25rem;
     letter-spacing: .05px;
     margin-bottom: 4px;
 }
@@ -68,14 +80,14 @@ body {
 
 .content__introduction {
     height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 2.5rem;
     padding-top: 15%;
 }
 
 .content__hobbies--change {
     cursor: pointer;
     display: inline-block;
-    margin-left: 10px;
+    margin-left: .5rem;
     color: #cf4a5c;
 }
 
@@ -84,7 +96,7 @@ body {
 }
 
 .content__hobbies--title {
-    line-height: 40px;
+    line-height: 2rem;
 }
 
 .content__blogs--article {
@@ -92,8 +104,8 @@ body {
 }
 
 .article-box {
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
     border-bottom: 1px solid #f0f0f0;
 }
 
@@ -103,7 +115,7 @@ body {
 }
 
 .content__blogs--title {
-    line-height: 40px;
+    line-height: 2rem;
 }
 
 .article-box__title {
@@ -112,30 +124,30 @@ body {
 }
 
 .content__contact--title {
-    line-height: 40px;
+    line-height: 2rem;
 }
 
 .content__contact--form {
-    padding-top: 10px;
+    padding-top: .5rem;
     margin: 0 auto;
     text-align: left;
 }
 
 .name {
-    height: 35px;
+    height: 1.75rem;
     width: 50%;
     border-radius: 3px;
 }
 
 .form-group {
-    line-height: 40px;
+    line-height: 2rem;
 }
 
 .message {
-    height: 150px;
+    height: 7.5rem;
     width: 100%;
     border-radius: 3px;
-    margin: 15px 0;
+    margin: .75rem 0;
 }
 
 .submit-button {
@@ -143,10 +155,10 @@ body {
 }
 
 .form-button {
-    width: 80px;
-    height: 30px;
+    width: 4rem;
+    height: 1.5rem;
     margin: 0 auto;
-    line-height: 30px;
+    line-height: 1.5rem;
     color: #7da755;
     border: 1px solid #7da755;
     border-radius: 3px;
@@ -179,8 +191,8 @@ body {
 
 .content__home--title {
     font-weight: 700;
-    font-size: 65px;
-    line-height: 65px;
+    font-size: 3.25rem;
+    line-height: 3.25rem;
 }
 
 .content__home--subtitle {
@@ -192,6 +204,6 @@ body {
 }
 
 .content__hobbies--imgs img {
-    width: 360px;
-    height: 240px;
+    width: 18rem;
+    height: 12rem;
 }
