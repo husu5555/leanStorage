@@ -97,3 +97,6 @@ $(".submit-button").on("click", function() {
         alert("发送成功");
     });
 });
+/*初始化content高度*/
+var contentHeight = $(window).height() - 42;
+$(".content__box").css("height", contentHeight);

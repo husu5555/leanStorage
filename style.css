@@ -127,6 +127,10 @@ body {
     border-radius: 3px;
 }
 
+.form-group {
+    line-height: 40px;
+}
+
 .message {
     height: 150px;
     width: 100%;
@@ -159,12 +163,35 @@ body {
 
 .content__home {
     width: 100% !important;
-    height: 800px;
-    background: url("./img/bg.jpg") no-repeat;
-    background-size: 100% 100%;
+    padding-top: 20%;
+    color: white;
+    background: #000002;
 }
 
 .content__box {
     width: 80%;
     margin: 0 auto;
+    /*overflow: hidden;*/
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.content__home--title {
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 65px;
+}
+
+.content__home--subtitle {
+    font-style: italic;
+}
+
+.content__home--subtitle span {
+    font-weight: bold;
+}
+
+.content__hobbies--imgs img {
+    width: 360px;
+    height: 240px;
 }
