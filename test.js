@@ -100,3 +100,10 @@ $(".submit-button").on("click", function() {
 /*初始化content高度*/
 var contentHeight = $(window).height() - 42;
 $(".content__box").css("height", contentHeight);
+$(".content__home--title").css("marginTop", contentHeight * 0.45);
+/*随着窗口大小的改变content高度也改变*/
+window.onresize = function() {
+    contentHeight = $(window).height() - 42;
+    $(".content__box").css("height", contentHeight);
+    $(".content__home--title").css("marginTop", contentHeight * 0.45);
+};
