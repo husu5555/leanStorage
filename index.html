@@ -4,66 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="个人网站 web前端 leanStorage JavaScript">
+    <meta name="author" content="胡苏" />
+    <link rel="icon" href="./img/apple-su.ico" type="image/x-icon" />
     <title>LeanCloud JavaScript SDK</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<style type="text/css">
+    body {
+        background: #000002;
+    }
+</style>
 
 <body>
     <div class="header">
         <ul class="header__ul text-left">
-            <li class="header__li active" id="homeLi">Home</li>
-            <li class="header__li" id="aboutLi">About</li>
-            <li class="header__li" id="hobbiesLi">Hobbies</li>
-            <li class="header__li" id="blogsLi">blogs</li>
-            <li class="header__li" id="contactLi">Contact</li>
+            <li class="header__li active"><a href="./index.html">Home</a></li>
+            <li class="header__li"><a href="./pages/aboutpages.html">About</a></li>
+            <li class="header__li"><a href="./pages/hobbiespages.html">Hobbies</a></li>
+            <li class="header__li"><a href="./pages/blogspages.html">Blogs</a></li>
+            <li class="header__li"><a href="./pages/contactpages.html">Contact</a></li>
         </ul>
     </div>
     <div class="content">
-        <div class="content__home content__box" id="home">
+        <div class="content__home" id="home">
             <div class="content__home--title">
                 &lt;/html&gt;
             </div>
             <div class="content__home--subtitle">The <span>end</span> is always near.</div>
         </div>
-        <div class="content__introduction content__box hide" id="about">
-            <h1 class="title f-as">Hi, I'm Sue Hu</h1>
-            <h2 class="sub-title f-as mt15">Web Designer & Developer</h2>
-        </div>
-        <div class="content__hobbies hide content__box" id="hobbies">
-            <div class="text-left content__hobbies--title">
-                <div class="content__hobbies--change text-left">换一批</div>
-            </div>
-            <div class="content__hobbies--imgs" id="hobbiesImgs">
-            </div>
-        </div>
-        <div class="content__blogs content__box hide" id="blogs">
-            <div class="content__blogs--article" id="blogsArticle"></div>
-        </div>
-        <div class="content__contact content__box hide" id="contact">
-            <div>
-                <form class="content__contact--form">
-                    <div class="form-group">
-                        <input type="text" class="name" id="name" placeholder="Enter name">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="name" id="email" placeholder="Enter address">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="name" id="subject" placeholder="Enter subject">
-                    </div>
-                    <div class="form-group">
-                        <textarea type="text" class="message" id="message" placeholder="Enter message"></textarea>
-                    </div>
-                    <div class="submit-button">
-                        <div class="form-button">send</div>
-                    </div>
-                </form>
-            </div>
-        </div>
     </div>
-    <script type="text/javascript" src="./script/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="./script/jquery-1.11.0.min.js"></script>
     <script src="./script/av-min.js"></script>
     <script src="./test.js"></script>
+    <script type="text/javascript">
+        console.log($(".header").height());
+    </script>
 </body>
 
 </html>

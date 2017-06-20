@@ -64,23 +64,6 @@ queryArticle.find().then(function(results) {
         }
     });
 }, function(error) {});
-/*点击导航*/
-$(".header__ul").on("click", function(ev) {　
-    var ev = ev || window.event;　　　　
-    var target = ev.target || ev.srcElement;　　　　
-    if (target.nodeName.toLowerCase() == 'li') {　
-        $(".header__li").removeClass("active");　　
-        $("#" + target.id).addClass("active");　　
-        var id = "#" + target.innerHTML.toLowerCase();
-        $(id).removeClass("hide").addClass("show");　
-        var contentBox = $(".content__box");
-        for (var i = 0; i < contentBox.length; i++) {
-            if (contentBox[i].id !== target.innerHTML.toLowerCase()) {
-                contentBox.eq(i).removeClass("show").addClass("hide");
-            }
-        }
-    }
-});
 var EmailObject = AV.Object.extend('EmailObject');
 var emailObject = new EmailObject();
 /*存储email信息*/
@@ -97,13 +80,13 @@ $(".submit-button").on("click", function() {
         alert("发送成功");
     });
 });
-/*初始化content高度*/
-var contentHeight = $(window).height() - 42;
-$(".content__box").css("height", contentHeight);
-$(".content__home--title").css("marginTop", contentHeight * 0.45);
-/*随着窗口大小的改变content高度也改变*/
-window.onresize = function() {
-    contentHeight = $(window).height() - 42;
-    $(".content__box").css("height", contentHeight);
-    $(".content__home--title").css("marginTop", contentHeight * 0.45);
-};
+// /*初始化content高度*/
+// var contentHeight = $(window).height() - 42;
+// $(".content__box").css("height", contentHeight);
+// $(".content__home--title").css("marginTop", contentHeight * 0.45);
+// /*随着窗口大小的改变content高度也改变*/
+// window.onresize = function() {
+//     contentHeight = $(window).height() - 42;
+//     $(".content__box").css("height", contentHeight);
+//     $(".content__home--title").css("marginTop", contentHeight * 0.45);
+// };
